@@ -35,6 +35,7 @@ This will pixelate a photo with blocks 20 by 20 pixels in size.
 
 <img src="http://imageshack.us/a/img138/1529/gcij.png" />
 
+
 <h3>Uneven pixels</h3>
 
 ```
@@ -70,6 +71,7 @@ Similarlly, you can vertically strech an image.
 
 <img src="http://imageshack.us/a/img822/2623/uquc.png" />
 
+
 <h3>Vertically streching a photo</h3>
 
 ```
@@ -85,6 +87,7 @@ use.pixelate({
 
 <img src="http://imageshack.us/a/img268/6330/pl28.png" />
 
+
 <h3>Save the source</h3>
 
 Additionally, if you decided to use the source code in your project, you can append the `source: true` option to see the source code of the modified image.
@@ -99,3 +102,8 @@ use.pixelate({
     source: true
 });
 ```
+
+
+<h3>Original photo</h3>
+
+<img src="http://img42.imageshack.us/img42/9795/ajok.png" />
