@@ -33,6 +33,23 @@ use.pixelate({
 
 This will pixelate a photo with blocks 20 by 20 pixels in size.
 
+<img src="http://imageshack.us/a/img138/1529/gcij.png" />
+
+<h3>Uneven pixels</h3>
+
+```
+var use = new Pixelator();
+
+use.pixelate({
+    image: 'mountain.png',
+    target: '#image',
+    width: 20,
+    height: 40
+});
+```
+
+<img src="http://imageshack.us/a/img836/4286/7fv2.png" />
+
 
 <h3>Horizontally streching a photo</h3>
 
@@ -51,6 +68,8 @@ use.pixelate({
 This will stretch (copy) the 150th vertical pixel row all over the image, giving the impression of a horizontally stretched image.
 Similarlly, you can vertically strech an image.
 
+<img src="http://imageshack.us/a/img822/2623/uquc.png" />
+
 <h3>Vertically streching a photo</h3>
 
 ```
@@ -63,6 +82,8 @@ use.pixelate({
     type: 'vertical'
 });
 ```
+
+<img src="http://imageshack.us/a/img268/6330/pl28.png" />
 
 <h3>Save the source</h3>
 
