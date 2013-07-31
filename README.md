@@ -8,3 +8,73 @@ Pixelator is an open source library that allows you to generate a HTML-only imag
 
 How to
 ------
+
+&bull; Add the Raw version of one of the scripts (<a href="https://raw.github.com/g3x0/pixelator/master/pixelator.min.js" target="_blank">min</a> or <a href="https://raw.github.com/g3x0/pixelator/master/pixelator.js" target="_blank">normal</a>) into your source code via the `<script>` HTML tag.<br />
+`<script src="https://raw.github.com/g3x0/pixelator/master/pixelator.min.js"></script>`
+
+&bull; You will need a `<div>` with a specific `id` to use the script with and the actual implementation of the script.<br />
+`<div id="image"></div>`
+
+
+Usage
+-----
+
+<h3>Pixelate a photo</h3>
+
+```
+var use = new Pixelator();
+
+use.pixelate({
+    image: 'mountain.png',
+    target: '#image',
+    res: 20
+});
+```
+
+This will pixelate a photo with blocks 20 by 20 pixels in size.
+
+
+<h3>Horizontally streching a photo</h3>
+
+```
+var use = new Pixelator();
+
+use.pixelate({
+    image: 'mountain.png',
+    target: '#image',
+    height: 30,
+    type: 'horizontal',
+    offset: 150
+});
+```
+
+This will stretch (copy) the 150th vertical pixel row all over the image, giving the impression of a horizontally stretched image.
+Similarlly, you can vertically strech an image.
+
+<h3>Vertically streching a photo</h3>
+
+```
+var use = new Pixelator();
+
+use.pixelate({
+    image: 'mountain.png',
+    target: '#image',
+    width: 20,
+    type: 'vertical'
+});
+```
+
+<h3>Save the source</h3>
+
+Additionally, if you decided to use the source code in your project, you can append the `source: true` option to see the source code of the modified image.
+
+```
+var use = new Pixelator();
+
+use.pixelate({
+    image: 'mountain.png',
+    target: '#image',
+    res: 20,
+    source: true
+});
+```
