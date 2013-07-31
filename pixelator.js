@@ -97,6 +97,7 @@ Pixelator.prototype = {
                         pixarr.style.overflow = 'hidden';
                         document.querySelector(targetSelector).appendChild(pixarr);
                     }
+                    
                     break;
 
                 case 'h':
@@ -123,6 +124,7 @@ Pixelator.prototype = {
                         pixarr.style.clear = 'both';
                         document.querySelector(targetSelector).appendChild(pixarr);
                     }
+                    
                     break;
             }
         }
