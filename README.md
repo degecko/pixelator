@@ -7,4 +7,4 @@ Pixelator is an open source library that allows you to generate a HTML-only imag
 How to
 ------
 
-Insert the raw link into your source code via the <script> tag.
+Insert the raw link into your source code via the "<script>" tag.
